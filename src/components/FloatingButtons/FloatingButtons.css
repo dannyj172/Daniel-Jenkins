@@ -1,0 +1,39 @@
+.floating-buttons {
+  position: fixed;
+  bottom: 35px;
+  left: 13vw;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.floating-buttons svg {
+  width: 20px;
+  height: 20px;
+}
+
+.floating-buttons .github {
+  color: var(--gray);
+}
+
+@media (max-width: 1350px) {
+  .floating-buttons {
+    position: static;
+    justify-content: left;
+    padding-bottom: 30px;
+    width: 60vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .floating-buttons {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .floating-buttons {
+    width: 80vw;
+  }
+}

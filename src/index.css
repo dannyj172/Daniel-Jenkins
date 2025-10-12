@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import "@fontsource-variable/source-serif-4";
+
+:root {
+  --bg-clr: #111111;
+  --white: #eee;
+  --gray: #b4b4b4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.36px;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Source Serif 4 Variable", serif;
+  color: var(--white);
+}
+
+/* body,html {
+  font-family: "Source Serif 4 Variable", serif;
+  color: white;
+  overflow-x :hidden;
+} */
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  background-color: #111111;
+  background-color: var(--bg-clr);
+}
+
+.geist {
+  font-family: "Geist", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}

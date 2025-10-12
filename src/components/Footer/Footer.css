@@ -1,0 +1,47 @@
+footer {
+  margin: 30px 0;
+  display: flex;
+  width: 100%;
+}
+
+footer a,
+footer h1 {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-underline-offset: 3px;
+}
+
+footer a:hover {
+  color: var(--white);
+}
+
+.dashed-line {
+  border-top: 2px dashed #3a3a3a;
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+span {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer a,
+  footer h1 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

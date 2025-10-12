@@ -1,0 +1,63 @@
+.tech-container {
+  margin: 50px auto 0px;
+}
+
+.tech-container h1,
+.tools-container h1 {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.s {
+  color: #404fb6;
+}
+
+.tech-and-tools-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+}
+
+.tech-and-tools-list > li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Geist", sans-serif;
+  font-size: 16px;
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: default;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-clr);
+}
+
+.tech-and-tools-list svg {
+  width: 25px;
+  height: 25px;
+}
+
+.express {
+  background-color: var(--white);
+  padding: 4px;
+  border-radius: 100px;
+}
+
+.tools-container {
+  margin: 25px auto;
+}
+
+@media screen and (max-width: 380px) {
+  .tech-and-tools-list {
+    grid-template-columns: 1fr;
+  }
+}

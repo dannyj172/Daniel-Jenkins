@@ -1,0 +1,105 @@
+.certifications-section h1 {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 500px;
+}
+
+.certifications-container a {
+  margin-bottom: 30px;
+}
+
+.certifications-container a:nth-child(odd) {
+  justify-self: start;
+}
+
+.certifications-container a:nth-child(even) {
+  justify-self: end;
+}
+
+.certifications-container img {
+  max-height: 500px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.certifications-container img:hover {
+  opacity: 0.75;
+  filter: blur(1px);
+}
+
+.certifications-container a {
+  position: relative;
+}
+
+.certifications-container svg {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--white);
+  font-size: 2.5rem;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(10px, -10px, 0) scale(1.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.certifications-container a:hover svg {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* @media (max-width: 1420px) {
+  .certifications-container {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-container a:nth-child(odd),
+  .certifications-container a:nth-child(even) {
+    justify-self: center;
+  }
+} */
+
+@media screen and (max-width: 1200px) {
+  .certifications-container img {
+    max-height: 40vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .certifications-container img {
+    max-height: 60vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .certifications-container img {
+    max-height: none;
+    height: 100%;
+    max-width: 40vw;
+  }
+
+  .certifications-container a:hover svg {
+    opacity: 1;
+    transform: translateY(0) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .certifications-container img {
+    max-width: 80vw;
+  }
+
+  .certifications-container {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-container a:nth-child(odd),
+  .certifications-container a:nth-child(even) {
+    justify-self: center;
+  }
+}

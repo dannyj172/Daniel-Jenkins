@@ -1,0 +1,49 @@
+.spoiler-block {
+  background: #222;
+  color: transparent;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: color 0.5s, background 0.3s, opacity 0.3s, width 0.3s;
+  user-select: none;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 500;
+  width: 120px;
+  text-wrap: nowrap;
+}
+
+.spoiler-block:hover {
+  background: #313131;
+}
+
+.spoiler-block.revealed {
+  color: var(--gray);
+  background: #222;
+  opacity: 1;
+  width: 410px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10px;
+  color: var(--gray);
+}
+
+.spoiler-container > h1 {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+  margin-left: 35px;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 550px) {
+  .spoiler-block.revealed {
+    max-width: 80vw;
+  }
+  .spoiler-block {
+    text-wrap: wrap;
+  }
+}
