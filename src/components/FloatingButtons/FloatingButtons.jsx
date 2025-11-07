@@ -89,7 +89,11 @@ const FloatingButtons = () => {
         </svg>
       </a>
 
-      <a href="/examplecv.png" target="_blank" rel="noopener noreferrer">
+      <a
+        href="/Daniel-Jenkins-CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

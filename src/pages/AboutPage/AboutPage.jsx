@@ -127,8 +127,8 @@ const AboutPage = () => {
           </p>
 
           <p className="mt">
-            I have completed all of SoftUnis Javascript Developer path courses
-            and have further developed my ability to code by building personal
+            I have completed all of SoftUni's JavaScript Developer path courses
+            and have further developed my ability to code through building
             projects, following tutorials and reading documentation.
           </p>
         </div>
@@ -137,7 +137,7 @@ const AboutPage = () => {
           <p>
             A few years ago I started learning how to code in between working a
             part time job. I quickly figured out that web dev is something I
-            enjoy so I enrolled for SoftUnis courses. I have learnt front and
+            enjoy, so I enrolled for SoftUni's courses. I have learnt front and
             back-end web development, databases and more.
           </p>
           <img
@@ -147,8 +147,8 @@ const AboutPage = () => {
             onLoad={handleImgLoad}
           />
           <p>
-            Softunis JS path concluded with <span>Angular</span>, so after
-            completing it I decided to further my understanding of that
+            SoftUni's JS path concluded with <span>Angular</span>, so after
+            completing it, I decided to further my understanding of that
             framework and build my own project with it before switching back to
             the more popular and my preferred framework <span>React</span>.
           </p>
@@ -168,7 +168,7 @@ const AboutPage = () => {
               CV ―{" "}
               <a
                 className="about-link"
-                href="/examplecv.png"
+                href="/Daniel-Jenkins-CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -177,8 +177,8 @@ const AboutPage = () => {
               /{" "}
               <a
                 className="about-link"
-                href="/examplecv.png"
-                download={"example-cv"}
+                href="/Daniel-Jenkins-CV.pdf"
+                download={"Daniel-Jenkins-CV"}
               >
                 Download
               </a>
@@ -217,7 +217,7 @@ const AboutPage = () => {
           <p>
             I currently reside in <span>Branishte/Dobrich</span>, but I can
             comfortably move to <span>Sofia</span> if necessary or work
-            remotely!
+            remotely.
           </p>
           <img
             src="dobrich.webp"
@@ -230,7 +230,7 @@ const AboutPage = () => {
           <h1>Colophon</h1>
           <p>
             This website is jumpstarted with <span>Vite</span>, made interactive
-            with <span>React</span>, styled with <span>CSS</span> and hosted on{" "}
+            with <span>React</span>, styled with <span>CSS</span>, and hosted on{" "}
             <span>Render</span>. Typeset is <span>Geist</span> and{" "}
             <span>Source Serif 4</span>. All media used is optimized, images and
             videos are converted to <span>.webp and .webm</span> and compressed

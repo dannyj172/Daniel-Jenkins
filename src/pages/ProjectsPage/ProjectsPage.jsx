@@ -41,13 +41,19 @@ const ProjectsPage = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     const scroll = shouldScroll.get("scroll");
     if (scroll && sectionIds.includes(scroll)) {
       const scrollToProject = document.getElementById(scroll);
       if (scrollToProject) {
-        scrollToProject.scrollIntoView({ behavior: "smooth", block: "center" });
+        setTimeout(() => {
+          scrollToProject.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }, 50);
       }
+    } else {
+      window.scrollTo(0, 0);
     }
   }, [shouldScroll]);
 
@@ -184,7 +190,7 @@ const ProjectsPage = () => {
         <ProjectCard
           name={"Discuss"}
           authicon
-          tags={["Angular", "Typescript", "MongoDB", "Express"]}
+          tags={["Angular", "TypeScript", "MongoDB", "Express"]}
           features={[
             "Authorization",
             "Create, Edit and View Posts",
@@ -216,7 +222,7 @@ const ProjectsPage = () => {
         />
         <ProjectCard
           name={"SneakerThrift"}
-          tags={["Angular", "React", "Javascript"]}
+          tags={["Angular", "React", "JavaScript"]}
           features={[
             "Modern UI",
             "Quality UX",
@@ -242,7 +248,7 @@ const ProjectsPage = () => {
           name={"Chatty"}
           tags={[
             "React",
-            "Javascript",
+            "JavaScript",
             "Tailwind",
             "MongoDB",
             "Express",
@@ -278,7 +284,7 @@ const ProjectsPage = () => {
         />
         <ProjectCard
           name={"Foodmine"}
-          tags={["Angular", "Typescript", "MongoDB", "Express"]}
+          tags={["Angular", "TypeScript", "MongoDB", "Express"]}
           features={[
             "Authorization",
             "Error Handling",
@@ -302,7 +308,7 @@ const ProjectsPage = () => {
         <ProjectCard
           name={"Zentry"}
           url={"zentry-s2hm.onrender.com"}
-          tags={["React", "Javascript", "GSAP Animations"]}
+          tags={["React", "JavaScript", "GSAP Animations"]}
           features={[
             "Desktop only",
             "Modern UI",
@@ -321,7 +327,7 @@ const ProjectsPage = () => {
           name={"Homyz Real Estate"}
           tags={[
             "React",
-            "Javascript",
+            "JavaScript",
             "MongoDB",
             "Express",
             "Cloudinary",
@@ -340,6 +346,7 @@ const ProjectsPage = () => {
             "Quality UX",
             "Responsive Design",
             "Error Handling",
+            "Prisma ORM",
             "Swiper",
             "MantineUI",
             "Axios",
@@ -356,7 +363,7 @@ const ProjectsPage = () => {
         />
         <ProjectCard
           name={"Movie Viewer"}
-          tags={["React", "Javascript", "Appwrite"]}
+          tags={["React", "JavaScript", "Appwrite"]}
           features={[
             "Modern UI",
             "Quality UX",

@@ -86,7 +86,7 @@ const TechAndTools = () => {
                 ></path>
               </svg>
             </div>
-            <p>Typescript</p>
+            <p>TypeScript</p>
           </li>
           <li>
             <div className="icon-box">

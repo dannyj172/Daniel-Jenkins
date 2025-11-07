@@ -5,11 +5,15 @@ const Footer = () => {
     <footer>
       <div className="dashed-line" />
       <h1>
-        <a href="/examplecv.png" download={"example-cv"}>
+        <a href="/Daniel-Jenkins-CV.pdf" download={"Daniel-Jenkins-CV"}>
           Click here
         </a>{" "}
         to download my <span>CV</span>, or simply view it by{" "}
-        <a href="/examplecv.png" target="_blank" rel="noopener noreferrer">
+        <a
+          href="/Daniel-Jenkins-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           clicking here
         </a>
         .

@@ -4,7 +4,6 @@ import "./Header.css";
 const Header = () => {
   return (
     <section className="header">
-      {/* <img src="pfp-alt.webp" alt="" className="header-img" /> */}
       <img src="pfp.webp" alt="" className="header-img2" />
 
       <div className="info-box">

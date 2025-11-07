@@ -426,7 +426,7 @@
   }
 
   .project-image {
-    width: 350px;
+    width: 400px;
     max-width: 90vw;
   }
 
@@ -449,13 +449,9 @@
     flex-direction: row;
   }
 
-  .bottom-image {
-    width: 170px;
-    max-width: 45vw;
-  }
-
+  .bottom-image,
   .no-mobile-img {
-    width: 170px;
+    width: 185px;
     max-width: 45vw;
   }
 
