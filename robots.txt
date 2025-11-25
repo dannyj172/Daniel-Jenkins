@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://https://daniel-jenkins-portfolio.onrender.com/sitemap.xml
